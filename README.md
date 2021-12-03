@@ -20,15 +20,13 @@ In this competition, your goal is to correctly identify digits from a dataset of
   - The first column, called **"label"**, is the digit that was drawn by the user. 
   - The rest of the columns contain the pixel-values of the associated image.
   - Each pixel column in the training set has a name like **_pixelx_**, where x is an integer between 0 and 783. 
-  - To locate this pixel on the image, suppose that we have decomposed x as x = i * 28 + j | [i,j] ⊂ [0,...,27]. 
+  - To locate this pixel on the image, suppose that we have decomposed x as _{x = i * 28 + j | [i,j] ⊂ [0,...,27]}_
   - Then pixelx is located on row i and column j of a 28 x 28 matrix, (indexing by zero).
-<br/>
-
-For example, _pixel31_ indicates the pixel that is in the fourth column from the left, and second row from the top, as in the ascii-diagram below.
 <br/>
 
 ---
 
+For example, _pixel31_ indicates the pixel that is in the fourth column from the left, and second row from the top, as in the ascii-diagram below.
 Visually, if we omit the **_"pixel"_** prefix, the pixels make up the image like this:
 <br/>
 
@@ -46,6 +44,7 @@ The test data set, (test.csv), is the same as the training set, except that it d
 
 <br/>
 Your submission file should be in the following format: 
+
 - For each of the 28000 images in the **_test_** set, output a single line containing the **_ImageId_** and the **_digit_** you predict. 
 - For example, if you predict that the first image is of a 3, the second image is of a 7, and the third image is of a 8, then your submission file would look like:
 <br/>
