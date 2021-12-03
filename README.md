@@ -19,7 +19,6 @@ In this competition, your goal is to correctly identify digits from a dataset of
   - Each pixel column in the training set has a name like **pixelx**, where _**x**_ is an integer between 0 and 783. 
   - To locate this pixel on the image, suppose that we have decomposed **_x_** as **_{x = i * 28 + j | [i,j] ⊂ [0,...,27]}_**
   - Then pixelx is located on **row i** and **column j** of a 28 x 28 matrix, (indexing by zero).
-<br/>
 
 ---
 
@@ -40,7 +39,6 @@ The **test data set**, _(test.csv)_, is the same as the training set, except tha
 
 ---
 
-<br/>
 Your submission file should be in the following format: 
 
 - For each of the 28000 images in the **_test_** set, output a single line containing the **_ImageId_** and the **_digit_** you predict. 
