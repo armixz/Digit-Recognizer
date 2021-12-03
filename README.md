@@ -10,19 +10,19 @@ In this competition, your goal is to correctly identify digits from a dataset of
 
 The data files train.csv and test.csv contain gray-scale images of hand-drawn digits, from zero through nine.<br/><br/>
 Each image is 28 pixels in height and 28 pixels in width, for a total of 784 pixels in total. Each pixel has a single pixel-value associated with it, indicating the lightness or darkness of that pixel, with higher numbers meaning darker. This pixel-value is an integer between 0 and 255, inclusive.
-<br/><br/>
+<br/>
 
 The training data set, (train.csv), has 785 columns. The first column, called "label", is the digit that was drawn by the user. The rest of the columns contain the pixel-values of the associated image.
-<br/><br/>
+<br/>
 
 Each pixel column in the training set has a name like pixelx, where x is an integer between 0 and 783, inclusive. To locate this pixel on the image, suppose that we have decomposed x as x = i * 28 + j, where i and j are integers between 0 and 27, inclusive. Then pixelx is located on row i and column j of a 28 x 28 matrix, (indexing by zero).
-<br/><br/>
+<br/>
 
 For example, pixel31 indicates the pixel that is in the fourth column from the left, and the second row from the top, as in the ascii-diagram below.
-<br/><br/>
+<br/>
 
 Visually, if we omit the "pixel" prefix, the pixels make up the image like this:
-<br/><br/>
+<br/>
 
 ```
 000 001 002 003 ... 026 027
@@ -35,7 +35,7 @@ The test data set, (test.csv), is the same as the training set, except that it d
 ```
 <br/>
 Your submission file should be in the following format: For each of the 28000 images in the test set, output a single line containing the ImageId and the digit you predict. For example, if you predict that the first image is of a 3, the second image is of a 7, and the third image is of a 8, then your submission file would look like:
-<br/><br/>
+<br/>
 
 ```
 ImageId,Label
