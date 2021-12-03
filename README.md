@@ -17,10 +17,10 @@ In this competition, your goal is to correctly identify digits from a dataset of
   - The first column, called **"label"**, is the digit that was drawn by the user. 
   - The rest of the columns contain the pixel-values of the associated image.
   - Each pixel column in the training set has a name like **pixelx**, where _**x**_ is an integer between 0 and 783. 
-  - To locate this pixel on the image, suppose that we have decomposed **_x_** as **_{x = i * 28 + j | [i,j] ⊂ [0,...,27]}_**
+  - To locate this pixel on the image, suppose that we have decomposed **_x_** as **_{x = i * 28 + j | [i,j] ∈ [0,..,27]}_**
   - Then pixelx is located on **row i** and **column j** of a 28 x 28 matrix, (indexing by zero).
 
----
+<br/>
 
 For example, _**pixel31**_ indicates the pixel that is in the **fourth column from the left**, and **second row from the top**, as in the ascii-diagram below.
 Visually, if we omit the **_"pixel"_** prefix, the pixels make up the image like this:
@@ -37,7 +37,7 @@ Visually, if we omit the **_"pixel"_** prefix, the pixels make up the image like
 
 The **test data set**, _(test.csv)_, is the same as the training set, except that it does not contain the _"label"_ column.
 
----
+<br/>
 
 Your submission file should be in the following format: 
 
