@@ -8,27 +8,27 @@ In this competition, your goal is to correctly identify digits from a dataset of
 
 ## Data Description
 
-- The data files train.csv and test.csv contain gray-scale images of hand-drawn digits, from zero through nine.
+- The data files **_train.csv_** and **_test.csv_** contain gray-scale images of hand-drawn digits, from zero through nine.
 - Each image is 28 pixels in height and 28 pixels in width, for a total of 784 pixels in total. 
 - Each pixel has a single pixel-value associated with it, indicating the lightness or darkness of that pixel, with higher meaning darker. 
 - This pixel-value is an integer between 0 and 255, inclusive.
 
 <br/>
 
-- The training data set, (train.csv), has 785 columns. 
-  - The first column, called "label", is the digit that was drawn by the user. 
+- The training data set, _(train.csv)_, has 785 columns. 
+  - The first column, called **"label"**, is the digit that was drawn by the user. 
   - The rest of the columns contain the pixel-values of the associated image.
-  - Each pixel column in the training set has a name like pixelx, where x is an integer between 0 and 783, inclusive. 
+  - Each pixel column in the training set has a name like **_pixelx_**, where x is an integer between 0 and 783, inclusive. 
   - To locate this pixel on the image, suppose that we have decomposed x as x = i * 28 + j, where i and j are integers between 0 and 27. 
   - Then pixelx is located on row i and column j of a 28 x 28 matrix, (indexing by zero).
 <br/>
 
-For example, pixel-31 indicates the pixel that is in the fourth column from the left, and second row from the top, as in the ascii-diagram below.
+For example, _pixel31_ indicates the pixel that is in the fourth column from the left, and second row from the top, as in the ascii-diagram below.
 <br/>
 
 ---
 
-Visually, if we omit the "pixel" prefix, the pixels make up the image like this:
+Visually, if we omit the **_"pixel"_** prefix, the pixels make up the image like this:
 <br/>
 
 ```
@@ -44,7 +44,9 @@ The test data set, (test.csv), is the same as the training set, except that it d
 ---
 
 <br/>
-Your submission file should be in the following format: For each of the 28000 images in the test set, output a single line containing the ImageId and the digit you predict. For example, if you predict that the first image is of a 3, the second image is of a 7, and the third image is of a 8, then your submission file would look like:
+Your submission file should be in the following format: 
+- For each of the 28000 images in the **_test_** set, output a single line containing the **_ImageId_** and the **_digit_** you predict. 
+- For example, if you predict that the first image is of a 3, the second image is of a 7, and the third image is of a 8, then your submission file would look like:
 <br/>
 <br/>
 
