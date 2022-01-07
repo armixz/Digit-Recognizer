@@ -39,7 +39,7 @@ The **test data set**, _(test.csv)_, is the same as the training set, except tha
 
 <br/>
 
-Your submission file should be in the following format: 
+The submission file contains the following objects: 
 
 - For each of the 28000 images in the **_test_** set, output a single line containing the **_ImageId_** and the **_digit_** you predict. 
 - For example, if you predict that the first image is of a 3, the second image is of a 7, and the third image is of a 8.
